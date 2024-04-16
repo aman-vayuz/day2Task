@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:isar/isar.dart';
 import 'package:provider/provider.dart';
 import 'package:vayuz_todo/custom_widgets/custom_widgets.dart';
 import 'package:vayuz_todo/note_modal/todo_modal.dart';
@@ -69,7 +68,9 @@ class _ToDoScreenState extends State<ToDoScreen> {
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const SizedBox(width: 10,),
+            const SizedBox(
+              width: 10,
+            ),
             DropdownButton(
                 value: selectedCategory,
                 items: TaskCategory.values.map((category) {
